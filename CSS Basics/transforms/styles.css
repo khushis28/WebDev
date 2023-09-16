@@ -1,0 +1,30 @@
+.box{
+    background-color: aqua;
+    /* here, 30px is X-axis which moves the div element horizontally ; 20px is Y-axis which moves the div element vertically */
+    transform: translate(30px,20px);
+    transform: translateX(50px);  
+    transform: translateY(40px);
+
+    /* rotates the div element */
+    /* rotates the div element towards left side */
+    transform: rotate(10deg);
+    /* rotates the div element towards right side */
+    transform: rotate(-10deg);
+
+    margin: 50px;
+    /* here, '1' expands the div element horizontally; '2' expands the div element vertically */
+    transform: scale(1,2);
+
+    /* here, point values can also be given to scale an element using 2D transform */
+    transform: scale(1.2,2);
+
+    transform: scaleX(1);
+    transform: scaleY(3);
+
+    /* here, +20deg tilts the div element towards left */
+    /* transform: skew(20deg); */
+
+    /* here, +20deg tilts the div element towards right  */
+    transform: skew(-20deg);
+}
+
