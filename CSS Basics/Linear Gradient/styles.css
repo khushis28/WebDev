@@ -1,0 +1,26 @@
+.box{
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+
+    /* if we don't provide any specific direction then by default it takes top to down direction */
+    background-image: linear-gradient(aqua, white, pink);
+    
+
+    background-image: linear-gradient(to left, aqua, white, pink);
+    background-image: linear-gradient(to right, aqua, white, pink);
+    background-image: linear-gradient(to bottom right, aqua, white, pink);
+    background-image: linear-gradient(to bottom left, aqua, white, pink);
+    background-image: linear-gradient(to top left, aqua, white, pink);
+    background-image: linear-gradient(to top right, aqua, white, pink);
+    background-image: linear-gradient(to bottom, aqua, white, pink);
+    
+    
+    /* we can also specify color gradient using angles */
+    background-image: linear-gradient(50deg, aqua, white, pink);
+ 
+    
+    /* we can also specify opacity(denoted by 'a') of a color to be used in color gradient */
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,255,1));
+}
+ 
