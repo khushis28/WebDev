@@ -1,0 +1,20 @@
+
+/* text-shadow */
+h1{
+    /* using 1 shadow color */
+    text-shadow: 2px 2px 2px magenta;
+    /* syntax of text-shadow -> text-shadow: 2px(horizontoal length) 2px(verticle length) 2px(blur length) color */
+    /* using 2 shadow colors */
+    text-shadow: 2px 2px 2px magenta, 4px 4px 4px yellow;
+    font-size: xx-large;
+}
+
+
+/* box-shadow */
+.box{
+    background-color: aqua;
+    height: 200px;
+    width: 300px;
+    box-shadow: 10px 10px 10px black, 25px 25px 25px grey;
+    font-size: x-large;
+}
