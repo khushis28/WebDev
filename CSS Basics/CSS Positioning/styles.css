@@ -1,0 +1,51 @@
+/* static type of positioning 
+p{
+    position: static;
+} */
+
+/* relative positioning */
+
+div{
+     display: inline-block;
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+.box{
+    position: relative;
+}
+
+
+/* here, we can see changes while using top, bottom, left and right functionalities in relative property */
+#box2{
+    position: relative;
+    top: 100px;
+    left: 100px;
+} 
+
+#box4{
+    position: relative;
+    top: 100px;
+    left: 100px;
+} */
+
+
+/* fixed property */
+#box1{
+    position: fixed;
+}
+
+.wrapper{
+    height: 2000px;
+    width: 100vw;
+    background-color: red;
+}
+
+
+/* sticky property */
+#box3{
+    position: sticky;
+    top: 0px;
+}
