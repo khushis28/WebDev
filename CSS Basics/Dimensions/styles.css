@@ -1,0 +1,12 @@
+.box{
+    border: 1px solid black;
+    max-height: 100px;
+    max-width: 300px;
+    overflow:scroll;
+}
+
+.div{
+    margin: 10px;
+    border: 1px solid black;
+    min-height: 100px;
+}
