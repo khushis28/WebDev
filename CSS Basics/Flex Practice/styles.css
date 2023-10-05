@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 400px;
+    border: 2px solid green;
+
+    /* to add flex  */
+    display: flex;
+
+    /* to change direction of flex */
+
+    /* changing to horizontal form */
+    flex-direction: column;
+ 
+    /* changing to vertical form */
+    flex-direction: row;
+
+    /* changing to right side horizontal form */
+    flex-direction: row-reverse;
+
+    /* changing to right side vertical form */
+    flex-direction: column-reverse;
+
+    /* to intact width of flex till to the extent possible */
+    flex-wrap: wrap;
+
+    flex-wrap: nowrap;
+
+    /* to reverse intact width of flex box */
+    flex-wrap: wrap-reverse;
+ 
+    /* to write both flex-wrap and flex-direction in same line */
+    flex-flow: row wrap; 
+
+    /* to place flex boxes in main axis of container */
+    /* to place in start of main axis of container */
+    justify-content: flex-start;
+
+    /* to place in end of main axis of container */
+    justify-content: flex-end;
+
+    /* to place in center of main axis of container */
+    justify-content: center;
+
+    /* to place equal spaces between flex boxes (no spacing from left and right margin of container) of main axis of container */
+    justify-content: space-around;
+
+    /* to place all flex boxes with even spaces among them in main axis of container */
+    justify-content: space-evenly;
+    
+    /* to place spacing between all flex boxes rather than in their side in main axis of container */
+    justify-content: space-between;
+
+    /* to align items of flex boxes in cross-axis of container */
+    align-items: flex-start;
+   
+   /* to align items from end of cross axis */
+    align-items: flex-end;
+
+    /* to align items in center from cross-axis */
+    align-items: center;
+
+    /* to align items in one base line */
+    align-items: baseline;
+
+    /* to center flex boxes  */
+    /* justify-content: center; */
+    align-items: center;
+
+    /* to give gaps between flex boxes */
+    gap: 10px;
+
+    /* boxes with content will be aligned at the top of the container when cross-axis is vertical */
+    align-content: flex-start;
+
+    /* boxes with content will be aligned at the bottom of the container */
+    align-content: flex-end;
+
+    /* boxes with content will be aligned at the center of the container */
+    align-content: center;
+
+    /* boxes with content will give spaces between the boxes and align them at top and bottom of the container */
+    align-content: space-between;
+
+    /* boxes with content will give spaces from the top and bottom margins of container and align them */
+    align-content: space-around;
+
+    /* boxes with content will be aligned by giving spaces to boxes with content evenly */
+    align-content: space-evenly;
+}   
+
+.box{
+    border: 1px solid brown;
+    background-color: aqua;
+    width:100px;
+
+    /* increases the width of flex boxes */
+    flex-grow: 1;
+
+    /* increases width of content of a flex box without trimming it; it makes it look responsive  */
+    flex-basis: 100px;
+
+    /* we can also use flex-basis in percentage form but with use of universal selector including box-sizing:border-box; */
+    flex-basis: 50%;
+}
+
+/* gives order to flex boxes */
+#box1{
+    order: 1;
+
+    /* squeezes the flex box with a speed */
+    flex-shrink: 4;
+
+    /* it aligns itself according to align self's attribute */
+    align-self: flex-end;
+}
+
+#box3{
+    order: 2;
+    align-self: stretch;
+}
+
+#box2{
+    order: 3;
+}
+
+
